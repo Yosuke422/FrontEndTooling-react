@@ -1,4 +1,4 @@
-// sum.test.js
+/* The code provided is a test case written in JavaScript using the Jest testing framework. */
 /* eslint-env node */
 
 const sum = require('../sum');
