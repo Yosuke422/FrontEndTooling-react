@@ -1,0 +1,39 @@
+// styles.scss
+
+// Define variables for reusability
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Define a mixin for box shadows
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Define a class with styles
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  // Use the box-shadow mixin
+  @include box-shadow(2px, 2px, 4px, rgba(0, 0, 0, 0.2));
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Define a nested selector
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .content {
+    padding: 20px;
+  }
+}
