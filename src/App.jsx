@@ -1,20 +1,19 @@
-import React from 'react';
-import { Primary, Secondary } from '../src/components/Buttons.stories'
-import './App.scss'
+import React,{ useState } from 'react'
+import PokemonList from '../src/components/Pokemon'
 
-/**
- * The App function returns a JSX element that renders a div with a heading and two components called
- * Primary and Secondary.
- * @returns The App component is returning a JSX element.
- */
 function App() {
+  const [fetchCount, setFetchCount] = useState(0)
+
+  const fetchNewPokemon = () => {
+    setFetchCount((prevCount) => prevCount + 1)
+  }
+
   return (
-    <div className="example">
-      <h1>Hello, World!</h1>
-      <Primary />  
-      <Secondary /> 
-    </div>
-  );
+    <PokemonList 
+      key={fetchCount} 
+      onFetchNewPokemon={fetchNewPokemon}
+    />
+  )
 }
 
-export default App;
+export default App
