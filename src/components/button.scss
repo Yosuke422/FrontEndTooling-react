@@ -1,0 +1,15 @@
+// button.scss
+.custom-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 1rem 4rem;
+  font-size: 1.5rem; 
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #ffaa00;
+    transform: scale(1.10);
+  }
+}
