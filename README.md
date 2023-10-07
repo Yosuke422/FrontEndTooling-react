@@ -157,7 +157,8 @@ npx sb init
   ```bash
   npm run storybook
   ```
-
+## Pokedex
+Created a Pokedex where it will generate a new Pokemon with its stats whenever you click on the button Load New Pokemon
   
 
 
