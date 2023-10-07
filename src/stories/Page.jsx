@@ -1,10 +1,9 @@
-import React from 'react';
-
-import { Header } from './Header';
-import './page.css';
+import React from 'react'
+import { Header } from './Header'
+import './page.css'
 
 export const Page = () => {
-  const [user, setUser] = React.useState();
+  const [user, setUser] = React.useState()
 
   return (
     <article>
@@ -31,8 +30,8 @@ export const Page = () => {
         </p>
         <ul>
           <li>
-            Use a higher-level connected component. Storybook helps you compose such data from the
-            "args" of child component stories
+          Use a higher-level connected component. Storybook helps you compose such data from 
+          the &quot;args&quot; of child component stories
           </li>
           <li>
             Assemble data in the page component from your services. You can mock these services out
