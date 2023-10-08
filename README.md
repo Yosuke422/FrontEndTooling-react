@@ -24,9 +24,10 @@ Once Vite is installed, you can create a Vite configuration file. Run the follow
 ```bash
 npm install --save-dev jest
 ```
-- Create a folder `__tests__` and a file `sum.test.js`
-- Create a file `sum.js`
+- Create a folder `__tests__` and a file `sum.test.js` and `pokemon.test.jsx`
+- Create a file `sum.js` and `pokemon.jsx`
 - `sum.js` and `sum.test.js` are exemples that will let us know if the test is successful
+- `pokemon.test.jsx` and `pokemon.jsx` are the actual test for the pokemon site 
 
 ```bash
 // sum.js
